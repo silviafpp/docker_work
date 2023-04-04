@@ -31,9 +31,7 @@
 
 		
 		if(mysqli_query($conn, $sql)){
-			echo "<h3>Dados guardados numa base de dados."
-				. " Aceda à sua base de dados "
-				. " para ver os dados atualizados.</h3>";
+			echo "<h3>Connected Successfully.</h3>";
 
 			echo nl2br("\n$first_name\n $last_name\n "
 				. "\n $email");
