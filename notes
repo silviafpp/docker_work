@@ -31,4 +31,6 @@ Redis - docker exec -it redis redis-cli
         KEYS * <shows your keys>
 
 
-
+php - mysql
+nodejs - 
+python - 
