@@ -34,14 +34,14 @@ Once the services are up and running, you can access the various services using 
 - PHP: localhost:8000
 - Adminer: localhost:8080
 
-You can access the MySQL database using the following credentials:
+### You can access the MySQL database using the following credentials:
 
 - Server: db
 - Username: root
 - Password: example
 - Database: user
 
-You can access the MongoDB database using the following commands in terminal:
+### You can access the MongoDB database using the following commands in terminal:
 
 ```
 docker exec -it mongodb mongo
@@ -59,7 +59,7 @@ Create a collection:
 db.createCollection("random name")
 ```
 
-You can access the Redis instance using the following commands in terminal:
+### You can access the Redis instance using the following commands in terminal:
 
 ```
 docker exec -it redis redis-cli
