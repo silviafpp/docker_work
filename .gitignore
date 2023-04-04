@@ -1,0 +1,4 @@
+#ignore folders
+mysql
+mongodb
+redisdb

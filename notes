@@ -1,0 +1,34 @@
+Python - docker exec -it <container name> /bin/bash
+        cd app/
+        python3 <py file name>
+
+
+Node - localhost:3000
+
+
+PHP - localhost:8000
+        Fill credentials
+
+
+Adminer <DB Demonstration> - localhost:8080 
+                                Server - db
+                                Username - root
+                                Password - example
+                                Database - user
+
+
+Mongo - docker exec -it mongodb mongo
+        show databases
+        use <random name>
+        db.createCollection("random name")
+
+
+Redis - docker exec -it redis redis-cli
+        SELECT 1 <selects db n1>
+        SET mykey "Hey" <creates a key named "Hey">
+        GET mykey <shows your key>
+        INFO keyspace <shows how many keys you have in each db>
+        KEYS * <shows your keys>
+
+
+
