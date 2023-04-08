@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   app:
-    image: python:3.9
+    build: ./images/py/.
     container_name: python
     volumes:
       - ./volumes/python:/app
@@ -17,9 +17,11 @@ services:
     command: npm start
     ports:
       - "3000:3000"
+    depends_on:
+      - mongodb
     
   php:
-    build: ./php_img/.
+    build: ./images/php/.
     container_name: php
     ports:
       - 8000:80

@@ -33,8 +33,7 @@
 		if(mysqli_query($conn, $sql)){
 			echo "<h3>Connected Successfully.</h3>";
 
-			echo nl2br("\n$first_name\n $last_name\n "
-				. "\n $email");
+			echo nl2br("\n$first_name\n $last_name\n $email");
 		} else{
 			echo "ERROR: Hush! Sorry $sql. "
 				. mysqli_error($conn);
