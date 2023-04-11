@@ -14,11 +14,11 @@ services:
       - redis
 
   node:
-    image: ./images/nodejs/.
+    image: node:14
     container_name: nodejs
     volumes:
       - ./volumes/node:/app
-#    working_dir: /app
+    working_dir: /app
     command: npm start
     ports:
       - "3000:3000"
