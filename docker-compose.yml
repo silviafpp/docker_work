@@ -14,7 +14,7 @@ services:
       - redis
 
   node:
-    image: node:14
+    build: ./images/node/.
     container_name: nodejs
     volumes:
       - ./volumes/node:/app
