@@ -5,7 +5,6 @@ services:
   python:
     build: ./images/python/.
     container_name: python
-    command: python3 app.py
     volumes:
       - ./volumes/python:/app
     ports:
@@ -16,10 +15,9 @@ services:
   node:
     build: ./images/node/.
     container_name: nodejs
+    command: npm start
     volumes:
       - ./volumes/node:/app
-    working_dir: /app
-    command: npm start
     ports:
       - "3000:3000"
     depends_on:
@@ -27,11 +25,11 @@ services:
     
   php:
     build: ./images/php/.
-    container_name: php
-    ports:
-      - 8000:80
+    container_name: 
     volumes:
       - ./volumes/php/src:/var/www/html
+    ports:
+      - 8000:80
     depends_on:
       - db 
 
@@ -52,16 +50,18 @@ services:
 
   mongo:
     image: mongo:5.0
-    container_name: mongodb
-    ports: 
-      - 27017:27017
+    container_name: 
     volumes:
       - ./volumes/mongodb:/data/db
+    ports: 
+      - 27017:27017
+ 
 
   redis:
     image: redis:6.2
     container_name: redis
-    ports:
-      - 6379:6379
     volumes:
       - ./volumes/redisdb:/data
+    ports:
+      - 6379:6379
+
