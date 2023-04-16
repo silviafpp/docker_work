@@ -5,6 +5,7 @@ services:
   python:
     build: ./images/python/.
     container_name: python
+    command: python3 app.py
     volumes:
       - ./volumes/python:/app
     ports:
@@ -25,7 +26,7 @@ services:
     
   php:
     build: ./images/php/.
-    container_name: 
+    container_name: php
     volumes:
       - ./volumes/php/src:/var/www/html
     ports:
@@ -38,6 +39,8 @@ services:
     container_name: adminer
     ports:
       - 8080:8080
+    depends_on:
+      - db
 
   db:
     image: mysql:5.6
@@ -50,7 +53,7 @@ services:
 
   mongo:
     image: mongo:5.0
-    container_name: 
+    container_name: mongodb
     volumes:
       - ./volumes/mongodb:/data/db
     ports: 
