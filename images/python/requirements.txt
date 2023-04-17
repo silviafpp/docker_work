@@ -1,2 +1,2 @@
-redis
-flask
+Flask==2.0.1
+redis==3.5.3

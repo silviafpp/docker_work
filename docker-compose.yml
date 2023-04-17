@@ -61,7 +61,7 @@ services:
  
 
   redis:
-    image: redis:6.2
+    image: redis:alpine
     container_name: redis
     volumes:
       - ./volumes/redisdb:/data
