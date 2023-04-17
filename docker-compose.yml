@@ -21,8 +21,8 @@ services:
       - ./volumes/node:/app
     ports:
       - "3000:3000"
-    # depends_on:
-    #   - mongo
+    depends_on:
+       - mongo
     
   php:
     build: ./images/php/.
@@ -51,13 +51,13 @@ services:
     volumes:
       - ./volumes/mysql:/var/lib/mysql
 
-  # mongo:
-  #   image: mongo:5.0
-  #   container_name: mongodb
-  #   volumes:
-  #     - ./volumes/mongodb:/data/db
-  #   ports: 
-  #     - 27017:27017
+  mongo:
+    image: mongo:5.0
+    container_name: mongodb
+    volumes:
+      - ./volumes/mongodb:/data/db
+    ports: 
+      - 27017:27017
  
 
   redis:
