@@ -1,6 +1,4 @@
-Python - docker exec -it <container name> /bin/bash
-        cd app/
-        python3 <py file name>
+Python - localhost:5000
 
 
 Node - localhost:3000
@@ -35,16 +33,6 @@ php - mysql
 nodejs - mongodb
 python - redis
 
+CREATE TABLE user ( id INT NOT NULL AUTO_INCREMENT, first_name VARCHAR(50) NOT NULL, last_name VARCHAR(50) NOT NULL, email VARCHAR(255) NOT NULL, PRIMARY KEY (id) );
 
-
-SET NAMES utf8;
-SET time_zone = '+00:00';
-SET foreign_key_checks = 0;
-SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
-
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) DEFAULT NULL,
-  `
+SELECT * FROM user;
