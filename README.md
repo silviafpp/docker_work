@@ -32,6 +32,7 @@ Once the services are up and running, you can access the various services using 
 
 - Node.js: localhost:3000
 - PHP: localhost:8000
+- Python: localhost:5000
 - Adminer: localhost:8080
 
 ### You can access the MySQL database using the following credentials:
@@ -57,28 +58,6 @@ use <random name>
 Create a collection:
 ```
 db.createCollection("random name")
-```
-
-### You can access the Redis instance using the following commands in terminal:
-
-```
-docker exec -it redis redis-cli
-```
-Selects a database:
-```
-SELECT 1 <selects db n1>
-```
-Set the value of a key:
-```
-SET key <value>
-```
-Retrieve the value of a key:
-```
-GET key
-```
-Show keys:
-```
-KEYS *
 ```
 
 
