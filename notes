@@ -37,4 +37,3 @@ CREATE TABLE user ( id INT NOT NULL AUTO_INCREMENT, first_name VARCHAR(50) NOT N
 
 SELECT * FROM user;
 
-dsdpsadoaksoid
