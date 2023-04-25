@@ -60,4 +60,3 @@ Create a collection:
 db.createCollection("random name")
 ```
 
-
