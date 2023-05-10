@@ -27,7 +27,7 @@
 		$sql = "INSERT INTO user (first_name, last_name, email) VALUES ('$first_name',
         '$last_name','$email')";
 		
-		if(mysqli_query($conn, $sql)){
+		if(mysqli_query($conn, $sql)){ 
 			echo "<h3>Connected Successfully.</h3>";
 
 			echo nl2br("\n$first_name\n $last_name\n $email");
