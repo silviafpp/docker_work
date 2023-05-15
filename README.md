@@ -42,21 +42,16 @@ Once the services are up and running, you can access the various services using 
 - Password: example
 - Database: user
 
-### You can access the MongoDB database using the following commands in terminal:
+### You can access the MongoDB database using the following command in terminal:
 
 ```
 docker exec -it mongodb mongo
 ```
-Show all databases:
+
+### You can access the Redis database using the following command in the terminal:
+
 ```
-show databases
+docker exec -it redis redis-cli
 ```
-Create new database:
-```
-use <random name>
-```
-Create a collection:
-```
-db.createCollection("random name")
-```
+
 
